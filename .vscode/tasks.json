@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Warm Julia REPL",
+            "type": "shell",
+            "command": "echo ${input:startJuliaREPL}",
+            "presentation": { "reveal": "never", "close": true },
+            "runOptions": { "runOn": "folderOpen" }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "startJuliaREPL",
+            "type": "command",
+            "command": "language-julia.startREPL"
+        }
+    ]
+}
